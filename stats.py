@@ -13,3 +13,13 @@ def char_counter(words):
         letter_counter[char] =  letter_counter.get(char,0)+1
 
     return letter_counter
+
+def sort_on(items):
+    for value in items.values():
+        return value
+
+def sort_dict(dict):
+    dict_list = [{k:v} for k, v in dict.items() if k.isalpha()]
+    dict_list.sort(reverse=True, key=sort_on)
+    return dict_list
+    
